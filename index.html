@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovators Chickens Farm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Innovators Chickens Farm</h1>
+            <nav>
+                <div class="hamburger-menu">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#updates">Real-Time Updates</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Back-to-Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- Home Section -->
+    <section id="home" class="fade-in">
+        <div class="container home-content">
+            <h2>Welcome to Innovators Chickens Farm</h2>
+            <p>Fresh, healthy, and farm-raised chickens for sale. Our chickens are raised with care and love, providing the best quality meat for our customers.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Real-Time Updates Section -->
+    <section id="updates" class="section-bg fade-in">
+        <div class="container">
+            <h2>Real-Time Updates</h2>
+            <div class="info-box">
+                <p>Total Chickens Available: <span id="totalChickens">0</span></p>
+                <p>Chickens Sold: <span id="soldChickens">0</span></p>
+                <p>Chickens in Stock: <span id="stockChickens">0</span></p>
+            </div>
+            <div class="sell-box">
+                <input type="number" id="sellInput" min="1" value="1" />
+                <button id="sellButton" onclick="sellChickens()">Sell Chickens</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="fade-in">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The best chicken I've ever tasted! Fresh and full of flavor."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The quality of service is outstanding. Highly recommend Innovators Chickens Farm."</p>
+                    <h4>- Jane Smith</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like more information, please don't hesitate to get in touch.</p>
+            <div class="contact-info">
+                <p>Email: info@innovatorschickens.com</p>
+                <p>Phone: +254757784958</p>
+                <p>Location: Kiraho Road, Malindi</p>
+            </div>
+            <!-- Interactive Map -->
+            <div id="map" class="map"></div>
+        </div>
+    </section>
+
+    <!-- Order Now Section -->
+    <section id="order" class="section-bg fade-in">
+        <div class="container">
+            <h2>Order Chickens</h2>
+            <p>Fill out the form below to place an order for our fresh farm-raised chickens.</p>
+            <form id="orderForm">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="tel" name="phone" placeholder="Your Phone Number" required />
+                <input type="number" name="quantity" placeholder="Number of Chickens" required />
+                <textarea name="notes" placeholder="Additional Notes"></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="fade-in">
+        <div class="container">
+            <p>&copy; 2024 Innovators Chickens Farm. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
